@@ -1,42 +1,65 @@
-# 🤖 MiniTask - Nahrávání a přehrávání maker
+# 🎯 MiniTask - Automatizace maker pro Windows
 
-**MiniTask** je open-source nástroj pro automatizaci opakujících se úkonů - podobný TinyTask. Umožňuje nahrávat pohyby myši, kliknutí a klávesnici a pak je automaticky přehrávat s plnou kontrolou nad rychlostí a opakováním.
+**MiniTask** je výkonný open-source nástroj pro nahrávání a automatické přehrávání maker - moderní alternativa k TinyTask. Nahrajte své akce myši a klávesnice jednou a přehrajte je neomezeně s plnou kontrolou nad rychlostí a opakováním.
 
-![Version](https://img.shields.io/badge/version-1.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 ![Python](https://img.shields.io/badge/python-3.7+-green)
 ![License](https://img.shields.io/badge/license-MIT-orange)
+![Size](https://img.shields.io/badge/size-~15MB-yellow)
 
 ---
 
-## ✨ Funkce
+## ✨ Hlavní funkce
 
-| Funkce | Popis |
-|--------|-------|
-| 🎥 **Nahrávání** | Zaznamenává pohyby myši, kliknutí a klávesnici |
-| ▶️ **Přehrávání** | Přesné přehrání nahraných akcí s timingem |
-| ⚡ **Rychlost** | Upravitelná rychlost 0.1x - 5x |
-| 🔄 **Opakování** | 1-1000x opakování nebo nepřetržitý režim |
-| 💾 **Ukládání** | Export/import maker ve formátu JSON (.mtask) |
-| ⌨️ **Klávesové zkratky** | F3, F4, ESC pro rychlé ovládání |
-| 🖼️ **Moderní GUI** | Intuitivní grafické rozhraní |
+<table>
+<tr>
+<td width="50%">
+
+### 🎮 Ovládání
+- **🔴 Nahrávání** - Zachycuje pohyby myši, kliknutí a klávesy
+- **▶️ Přehrávání** - Přesné opakování všech akcí
+- **⏱️ Timing** - Zachovává přesné časování mezi akcemi
+- **⏹️ Stop** - Okamžité zastavení ESC nebo F4
+
+</td>
+<td width="50%">
+
+### ⚙️ Nastavení
+- **⚡ Rychlost** - 0.1x až 5x (10x zpomalít - 5x zrychlit)
+- **🔁 Opakování** - 1-1000x nebo nepřetržitý režim
+- **💾 Ukládání** - JSON formát (.mtask soubory)
+- **⌨️ Zkratky** - F3/F4/ESC globálně
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🚀 Rychlý start
 
-### Spuštění z EXE (Windows)
+### 💻 Spuštění z EXE (DOPORUČENO)
 
-1. Stáhněte `MiniTask.exe` z releases
-2. Spusťte soubor (není potřeba instalace)
-3. Hotovo! 🎉
+> **Stačí stáhnout a spustit - žádná instalace!**
 
-### Spuštění ze zdrojového kódu
+1. **Stáhněte** `MiniTask.exe` z [Releases](../../releases)
+2. **Spusťte** soubor (dvoj-klik)
+3. **Hotovo!** 🎉 Můžete začít nahrávat makra
+
+> ⚠️ **Windows SmartScreen:** První spuštění může zobrazit varování. Klikněte "Více informací" → "Přesto spustit"
+
+### 🐍 Spuštění ze zdrojového kódu
 
 ```powershell
-# 1. Instalace závislostí
+# 1. Naklonujte repozitář
+git clone https://github.com/VASE_JMENO/MiniTask.git
+cd MiniTask
+
+# 2. Instalujte závislosti
 pip install -r requirements.txt
 
-# 2. Spuštění aplikace
+# 3. Spusťte aplikaci
 python minitask.py
 ```
 
@@ -53,6 +76,16 @@ python minitask.py
 | **ESC** | Zastavit vše |
 
 ### Pracovní postup
+
+> **5 jednoduchých kroků k automatizaci:**
+
+```mermaid
+graph LR
+    A[🎬 Nahrát F3] --> B[⚙️ Nastavit]
+    B --> C[▶️ Přehrát F4]
+    C --> D[💾 Uložit]
+    D --> E[🔁 Opět použít]
+```
 
 #### 1️⃣ Nahrání makra
 - Stiskněte **F3** nebo tlačítko "⏺ Nahrávat"
