@@ -53,7 +53,7 @@
 
 ```powershell
 # 1. Naklonujte repozitář
-git clone https://github.com/VASE_JMENO/MiniTask.git
+git clone https://github.com/SamuelVales/MiniTask.git
 cd MiniTask
 
 # 2. Instalujte závislosti
@@ -297,3 +297,4 @@ Pokud se vám MiniTask líbí:
 - 📢 Sdílejte s ostatními
 
 Děkujeme! 🙏
+
